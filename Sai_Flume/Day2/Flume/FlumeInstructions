@@ -1,0 +1,24 @@
+hadoop fs -mkdir twitter
+cd /opt/cloudera/parcels/CDH/lib/flume-ng
+
+check lib directory, this is where you find the libraries for connecting to twitter
+
+Create account in twitter
+https://twitter.com/
+add your phone number
+
+create app
+https://apps.twitter.com/
+
+Activate account with phone number	
+
+Now create a new app
+
+Fill the flume configuration file
+
+flume-ng agent -n TwitterAgent --conf /home/instr_saikumar/realtime -f Twitter_Flume.conf
+
+flume-ng agent -n tier1 --conf /home/instr_saikumar/flume-kafka-spark -f Kafka_Flume.conf
+
+
+flume-ng agent -n tier1 --conf /home/instr_saikumar/flume -f conf/Kafka_Flume.conf

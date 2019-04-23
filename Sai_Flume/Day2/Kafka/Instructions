@@ -1,0 +1,24 @@
+
+check the list of topics:
+kafka-topics --zookeeper ip-172-31-31-136.us-west-2.compute.internal:2181 --list
+
+create a topic
+kafka-topics --create --zookeeper ip-172-31-31-136.us-west-2.compute.internal:2181 --replication-factor 1 --partitions 1 --topic twitterstream_instructor
+
+# producer:
+
+kafka-console-producer --broker-list ip-172-31-31-136.us-west-2.compute.internal:9092 --topic twitterstream_instructor
+
+# Consumer
+kafka-console-consumer --zookeeper ip-172-31-31-136.us-west-2.compute.internal:2181  --topic twitterstream_instructor --from-beginning
+
+
+
+check the list of topics:
+kafka-topics --zookeeper ip-172-31-31-136.us-west-2.compute.internal:2181 --list
+
+Change the topic name in python script. And start the script.
+python KafkaTwitterPython.py
+
+kafka-console-consumer --zookeeper ip-172-31-31-136.us-west-2.compute.internal:2181 --topic twitterstream_instructor --from-beginning 
+

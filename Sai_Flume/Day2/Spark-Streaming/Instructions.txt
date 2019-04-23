@@ -1,0 +1,3 @@
+Start kafka twitter stream
+Start flume kafka stream
+Start spark-streaming kafka stream
