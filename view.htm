@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://www.edupristine.com/infrastructure/theme/standard/styles.php" />
+<link rel="stylesheet" type="text/css" href="http://www.edupristine.com/infrastructure/theme/ServeSilicon/styles.php" />
+
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="http://www.edupristine.com/infrastructure/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="http://www.edupristine.com/infrastructure/theme/standard/styles_ie6.css" />
+<![endif]-->
+
+
+    <meta name="keywords" content="Pristine, FRM Study Material, CFA Study Material, PRM Study Material" />
+    <title>BD&amp;H: BD&amp;H: SparkLab- Transformations and Actions</title>
+    <link rel="shortcut icon" href="http://www.edupristine.com/infrastructure/theme/ServeSilicon/favicon.jpg" />
+	<link rel="icon" type="image/png" href="http://www.edupristine.com/wp-content/themes/default/images/favicon.jpg"/ >
+    <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(http://www.edupristine.com/infrastructure/lib/csshover.htc);} /*]]>*/</style>-->
+
+<script type="text/javascript" src="http://www.edupristine.com/infrastructure/lib/javascript-static.js"></script>
+<script type="text/javascript" src="http://www.edupristine.com/infrastructure/lib/javascript-mod.php"></script>
+<script type="text/javascript" src="http://www.edupristine.com/infrastructure/lib/overlib/overlib.js"></script>
+<script type="text/javascript" src="http://www.edupristine.com/infrastructure/lib/overlib/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="http://www.edupristine.com/infrastructure/lib/cookies.js"></script>
+<script type="text/javascript" src="http://www.edupristine.com/infrastructure/lib/ufo.js"></script>
+
+<script type="text/javascript" defer="defer">
+
+//<![CDATA[
+
+setTimeout('fix_column_widths()', 20);
+
+function openpopup(url,name,options,fullscreen) {
+  fullurl = "http://www.edupristine.com/infrastructure" + url;
+  windowobj = window.open(fullurl,name,options);
+  if (fullscreen) {
+     windowobj.moveTo(0,0);
+     windowobj.resizeTo(screen.availWidth,screen.availHeight);
+  }
+  windowobj.focus();
+  return false;
+}
+
+function uncheckall() {
+  void(d=document);
+  void(el=d.getElementsByTagName('INPUT'));
+  for(i=0;i<el.length;i++) {
+    void(el[i].checked=0);
+  }
+}
+
+function checkall() {
+  void(d=document);
+  void(el=d.getElementsByTagName('INPUT'));
+  for(i=0;i<el.length;i++) {
+    void(el[i].checked=1);
+  }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)"));
+		}
+	}
+	else{
+		arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)"));
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+//]]>
+</script>
+
+<link rel="stylesheet" href="http://www.edupristine.com/wp-content/themes/default/assets/css/custome/infra_style.css">
+</head>
+
+<body  class="mod-resource course-661 dir-ltr lang-en_utf8" id="mod-resource-view"> 
+
+<div class="wrapper">
+	<div class="header"  >
+		<!--Start of top_menu-->
+ <style type="text/css">
+.logo_infra{display:inline-block; padding:3px 0px;}
+.logo_infra img{height:70px;}
+ .wrap_head{
+	margin:0 auto;
+	min-width:960px;
+	position:relative;
+	width:960px;
+	background:#ffffff;
+}
+ .clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+ #menu_holder {
+	border-bottom:4px solid #369;
+	padding-left:166px;
+ }
+#pristinemenu {
+	z-index:300 !important;
+	font-family:Verdana;
+
+	list-style-type: none;
+	display:block;
+	/*float:right;*/
+}
+#pristinemenu a {
+	text-decoration:none;
+	color:#000000;
+	display:block;
+}
+#pristinemenu .parentMenu {
+	z-index:300;
+	padding:0px 3px 0px 3px;
+	float: left;
+}
+#pristinemenu .parentMenu div {
+	padding:5px;
+	width:90px;
+	text-align:center;
+}
+#pristinemenu .parentMenu .tab {
+	border-top:1px solid #cccccc;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	border-bottom:1px solid #cccccc;
+	background:#eeeeee;
+}
+#pristinemenu .parentMenu .tab:hover {
+	background:#cccccc;
+}
+#subpristinemenu {
+	z-index:300;
+	list-style-type:none;
+	border-bottom:1px solid #cccccc;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	border-top:1px solid #cccccc;
+	margin:0px;
+	padding:0px;
+}
+#subpristinemenu li  {
+	text-align:left !important;
+	padding:5px;
+	width:170px;
+	background:#eeeeee;
+}
+#subpristinemenu li:hover {
+	background:#cccccc;
+}
+#pristinemenu li ul {
+	z-index:300;
+	position:absolute;
+	margin-left:0px;
+	display:none;
+}
+#pristinemenu ul li ul {
+	position:absolute;
+	margin-top:-23px;
+	margin-left:155px;
+}
+
+/* SHOW SUBMENU 1 */
+#pristinemenu li:hover ul, #pristinemenu li.over ul {
+	display:block;
+}
+#pristinemenu li:hover ul ul, #pristinemenu li.over ul ul {
+	display:none;
+}
+/* SHOW SUBMENU 2 */
+#pristinemenu ul li:hover ul, #pristinemenu ul li.over ul {
+	display:block;
+}
+#subsubmenu {
+	padding-left:0px;
+	display:block;
+	list-style-type:none;
+	border-right:1px solid #cccccc;
+	border-top:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+	border-left:1px solid #cccccc;
+}
+#subsubmenu li:hover {
+	background:#cccccc;
+}
+#subsubmenu li {
+	background:#eeeeee;
+	width:150px;
+}
+.smallfont_about {
+	font-size:80%;
+}
+.smallfont {
+	font-size:90%;
+}
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+
+.my_shedule_header{
+padding: 4px;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+margin: 7px auto;
+background: #EEEEEE;
+border: 1px solid #C8C6C6;
+}
+.my_shedule_header a:hover{
+text-decoration:none;
+}
+</style>
+	<!--<div class="wrap_head smallfont" style="padding-top:15px;" >
+
+		<span style="font-size: 100% !important;">
+		<span ><a href="http://www.edupristine.com/home/contact-us/">Contact Us</a></span>
+        </span>
+        </div>-->
+
+<!--end of top_menu-->    </div><!--end of header-->
+
+<!--------end new add--------------------->
+<!--=== Top ===-->
+<div class="top-v1">
+	<div class="container">
+		<div>
+			<ul class="list-unstyled top-v1-contacts" style="float:left">
+			  
+				<li class="login_header_bg"><a href="http://edupristine.com/infrastructure/logout.php">Hi Jayashri   (LOGOUT)</a></li>
+				
+				
+				
+				
+			</ul>
+		</div>
+		<div>
+			<ul class="list-unstyled top-v1-data">
+				<li><a class="pristine_help_email" href="mailto:support@edupristine.com">support@edupristine.com</i></a></li>
+				<!--<li><span class="phone_icon hidden-xs"><a href="tel:1800 200 5835">1800 200 5835</a></span></li>-->
+			</ul>
+		</div>
+	</div>
+</div>
+<!--/top-v1-->
+
+
+<div class="container">
+<!--navigation for desktop-->
+<!-- <div style="margin:10px 0px;">
+	<div class="main_menu">
+	<div class="edpristine_dd_india">
+		<ul>
+			<li><a href="http://www.edupristine.com/classroom/">Classroom Training</a></li>
+			<li><a href="http://www.edupristine.com/courses/">Online Courses</a></li>
+			<li><a href="http://www.edupristine.com/centers/">Centers</a></li>
+			<li><a href="http://www.edupristine.com/download/">Free Downloads</a></li>
+			<li><a href="http://www.edupristine.com/discuss/viewforum.php">Forum</a></li>
+			<li><a href="http://www.edupristine.com/blog/">Blog</a></li>
+			<li><a href="http://www.edupristine.com/testimonial/">Testimonials</a></li>
+		</ul>
+	</div>
+	</div> -->
+
+<!--navigation for tab and phone-->
+<!--logo-->
+	<a class="navbar-brand logo_infra" href="http://www.edupristine.com/" target="_blank">
+	<img id="logo-header" src="http://www.edupristine.com/wp-content/themes/default/assets/img/logo1-default.png" alt="EduPristine Logo">
+	</a>
+</div>
+<!--/logo-->
+</div><!--/container-->
+<!--------/new add--------------------->
+
+
+
+<div id="page" >
+    <div class="navbar clearfix">
+        <div class="breadcrumb"><h2 class="accesshide " >You are here</h2> <ul>
+<li class="first"><a onclick="this.target='_top'" href="http://www.edupristine.com/infrastructure/">EduPristine</a></li><li class="first"> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> <a onclick="this.target='_top'" href="http://www.edupristine.com/infrastructure/course/view.php?id=661">BD&amp;H</a></li><li class="first"> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> <a onclick="this.target='_top'" href="http://www.edupristine.com/infrastructure/mod/resource/index.php?id=661">Resources</a></li><li class="first"> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> SparkLab- Transformations and Actions</li></ul></div>
+        <div class="breadcrumb1"></div>       
+    </div>   
+    <!-- END OF HEADER -->
+<div class="headerbottom">
+	<div class="contents my_shedule_header"><a href="http://www.edupristine.com/infrastructure/calendar/view.php" title="My Schedule">My Schedule</a></div>
+</div>
+   <div class="contents">
+<div class="resourcepdf">To open this document, click on this link: <a href="http://coursesdom.edupristine.com/2017/Hadoop/8-9_Spark/Day-1/SparkLab-%20Transformations%20and%20Actions-D1.pdf">SparkLab- Transformations and Actions</a></div><img class="spacer" height="20" width="20" src="http://www.edupristine.com/infrastructure/pix/spacer.gif" alt="" /><br />
+</div> <!-- end div containerContent -->
+<!-- START OF FOOTER -->
+<div id="footer">
+
+
+
+
+<!--<div class="footer_links" >
+    <div class="wrap">
+    
+    <ul style="display:block;display:inline-block;position:absolute; right:0px;font-size:90%;">
+		<li><a href="http://www.edupristine.com/home/contact-us"  >Contact us</a></li>
+		<li><a href="http://www.edupristine.com/home/sitemap"  >Sitemap</a></li>
+		<li><a href="http://www.edupristine.com/home/tc-frm-prm-cfa-other-trainings" >T&C</a></li>
+		<li>&copy; EduPristine 2013</li>
+    </ul>  
+    </div>
+</div>end of footer_links-->
+
+<!--=== Footer new design ===-->
+<div class="footer_menu">
+	<div class="container">
+		<div class="footer_mevu_align_l">
+                <a href="http://www.edupristine.com/home/contact-us"  >Contact us</a> <span class="footer_menu_devider">|</span>
+				<a href="http://www.edupristine.com/home/sitemap"  >Sitemap</a> <span class="footer_menu_devider">|</span>
+				<a href="http://www.edupristine.com/home/tc-frm-prm-cfa-other-trainings"> T&#38;C </a>
+				</div>
+
+		<div class="footer_social_icon">
+				<a href="http://facebook.com/edupristine/" target="_blank" class="mar_footer_l">
+				<img src="http://www.edupristine.com/wp-content/themes/default/assets/img/fb-share.png" alt="Facebook" />
+				</a>&nbsp;
+				<a href="http://www.linkedin.com/company/edupristine/" target="_blank">
+				<img src="http://www.edupristine.com/wp-content/themes/default/assets/img/in-share.png" alt="LinkedIn" />
+				</a>&nbsp;
+				<a href="http://twitter.com/edupristine/" target="_blank">
+				<img src="http://www.edupristine.com/wp-content/themes/default/assets/img/twitter-share.png" alt="Twitter" />
+				</a>&nbsp;
+				<a href="https://plus.google.com/112352201586522582395/" target="_blank">
+				<img src="http://www.edupristine.com/wp-content/themes/default/assets/img/gplus-share.png" alt="Google +" />
+				</a>
+				</div>
+	</div>
+</div>
+<!--=== end Footer new design ===-->
+
+</div>
+<div class="disclaimer">
+	<div class="container">
+		<h5>Disclaimer</h5>
+		<p>Global Association of Risk Professionals, Inc. (GARP<sup>&reg;</sup>) does not endorse, promote, review or warrant the accuracy of the products or services offered by EduPristine for FRM<sup>&reg;</sup> related information, nor does it endorse any pass rates claimed by the provider. Further, GARP<sup>&reg;</sup> is not responsible for any fees or costs paid by the user to EduPristine nor is GARP<sup>&reg;</sup> responsible for any fees or costs of any person or entity providing any services to EduPristine Study Program. FRM<sup>&reg;</sup>, GARP<sup>&reg;</sup> and Global Association of Risk Professionals<sup>&reg;</sup>, are trademarks owned by the Global Association of Risk Professionals, Inc</p>
+		<p>CFA Institute does not endorse, promote, or warrant the accuracy or quality of the products or services offered by EduPristine. CFA Institute, CFA<sup>&reg;</sup>, Claritas<sup>&reg;</sup> and Chartered Financial Analyst<sup>&reg;</sup> are trademarks owned by CFA Institute.</p>
+		<p>Utmost care has been taken to ensure that there is no copyright violation or infringement in any of our content. Still, in case you feel that there is any copyright violation of any kind please send a mail to <a href="mailto:abuse@edupristine.com">abuse@edupristine.com</a> and we will rectify it.</p>
+	</div>
+</div>
+<div class="ca_copy">
+	<div class="container">
+		<center><p><span>2014 &copy; <a href="http://www.edupristine.com/">Edupristine</a>. ALL Rights Reserved.</span></p></center>
+	</div>
+</div>
+
+<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-8338897-2']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+
+</body>
+</html>
