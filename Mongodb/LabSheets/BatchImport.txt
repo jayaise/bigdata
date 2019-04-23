@@ -1,0 +1,19 @@
+go to bin directory
+https://www.mkyong.com/mongodb/mongodb-aggregate-and-group-example/
+mongoimport -d test -c website --file D:\edu\MongoDB\LabSheets\website.json
+
+db.website.aggregate(
+    {
+	$group : {_id : "$hosting", total : { $sum : 1 }}
+    }
+  );
+
+  
+db.website.aggregate(
+     {
+	$group : {_id : "$hosting", total : { $sum : 1 }}
+     },
+     {
+	$sort : {total : -1}
+     }
+  );
